@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Title.css'
 class Title extends Component {
     state = {}
     constructor(props) {
@@ -22,10 +22,10 @@ class Title extends Component {
 
         } else {
             output = ( <
-                div className = "d-flex" >
+                div className = "d-flex Title" >
                 <
                 h1 className = "display-4" > { this.state.title } < /h1> <
-                span className = "ml-auto" >
+                span className = "ml-auto edit-icon" >
                 <
                 i className = "fas fa-pencil-alt" > < /i> < /
                 span > <
