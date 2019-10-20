@@ -17,7 +17,10 @@ class Title extends Component {
         })
     }
     inputChange(event) {
-            console.log(event.target.value)
+            this.setState({
+                ...this.state,
+                title: event.target.value
+            })
         }
         /*counter() {
             this.setState({
@@ -33,7 +36,8 @@ class Title extends Component {
                 <
                 input className = "form-control"
                 onChange = {
-                    (event) => this.inputChange(event) }
+                    (event) => this.inputChange(event)
+                }
                 type = "text"
                 value = { this.state.title }
                 /> < /
