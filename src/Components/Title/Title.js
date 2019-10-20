@@ -11,10 +11,13 @@ class Title extends Component {
         }
     }
     editHandler() {
-            this.setState({
-                ...this.state,
-                isInput: true
-            })
+        this.setState({
+            ...this.state,
+            isInput: true
+        })
+    }
+    inputChange(event) {
+            console.log(event.target.value)
         }
         /*counter() {
             this.setState({
@@ -25,7 +28,17 @@ class Title extends Component {
     render() {
         let output = null
         if (this.state.isInput) {
-            output = < p > Me happy < /p>
+            output = ( <
+                div className = "Title" >
+                <
+                input className = "form-control"
+                onChange = {
+                    (event) => this.inputChange(event) }
+                type = "text"
+                value = { this.state.title }
+                /> < /
+                div >
+            )
         } else {
             output = ( <
                 div className = "d-flex Title" >
