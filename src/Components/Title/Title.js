@@ -17,10 +17,18 @@ class Title extends Component {
         })
     }
     inputChange(event) {
-            this.setState({
-                ...this.state,
-                title: event.target.value
-            })
+        this.setState({
+            ...this.state,
+            title: event.target.value
+        })
+    }
+    keyPressHandler(event) {
+            if (event.key === 'Enter') {
+                this.setState({
+                    ...this.state,
+                    isInput: false
+                })
+            }
         }
         /*counter() {
             this.setState({
@@ -37,6 +45,9 @@ class Title extends Component {
                 input className = "form-control"
                 onChange = {
                     (event) => this.inputChange(event)
+                }
+                onKeyPress = {
+                    (event) => this.keyPressHandler(event)
                 }
                 type = "text"
                 value = { this.state.title }
