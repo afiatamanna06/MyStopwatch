@@ -1,6 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
-import Title from './Title/Title'
+import Title from './Title/Title';
+import CountDown from './CountDown/CountDown';
 import './App.css';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         div className = "col-sm-8 offset-sm-2" >
         <
         Title / >
+        <
+        CountDown / >
         <
         /div> < /
         div > <
