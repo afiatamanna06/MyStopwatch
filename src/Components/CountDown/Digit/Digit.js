@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import './Digit.css'
 
 const Digit = (props) => {
-    return ( < div className = 'Digit mx-4 text-center' >
+    return ( < div className = 'Digit mx-4 text-center'
+        style = {
+            { borderColor: props.color }
+        } >
         <
-        h1 className = "display-3 py-5" > 00 < /h1> < /
+        h1 className = "display-3 py-5"
+        style = {
+            { color: props.color }
+        } > 00 < /h1> < /
         div >
     )
 }
