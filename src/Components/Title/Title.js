@@ -22,6 +22,12 @@ class Title extends Component {
             title: event.target.value
         })
     }
+    blurHandler(event) {
+        this.setState({
+            ...this.state,
+            isInput: false
+        })
+    }
     keyPressHandler(event) {
             if (event.key === 'Enter') {
                 this.setState({
@@ -48,6 +54,9 @@ class Title extends Component {
                 }
                 onKeyPress = {
                     (event) => this.keyPressHandler(event)
+                }
+                onBlur = {
+                    (event) => this.blurHandler(event)
                 }
                 type = "text"
                 value = { this.state.title }
