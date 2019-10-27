@@ -10,7 +10,7 @@ const Digit = (props) => {
         h1 className = "display-3 py-5"
         style = {
             { color: props.color }
-        } > { props.value } < /h1> < /
+        } > { props.value < 10 ? `0${ props.value }` : props.value } < /h1> < /
         div >
     )
 }

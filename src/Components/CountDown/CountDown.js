@@ -5,14 +5,14 @@ const CountDown = (props) => {
     return ( < div className = "d-flex" >
         <
         Digit color = "palegreen"
-        value = "10" / >
-        <
+        value = { props.time.min }
+        / > <
         Digit color = "skyblue"
-        value = "05" / >
-        <
+        value = { props.time.sec }
+        / > <
         Digit color = "salmon"
-        value = "03" / >
-        <
+        value = { props.time.mili }
+        / > <
         /div>
     )
 }
