@@ -4,11 +4,14 @@ import Digit from './Digit/Digit';
 const CountDown = (props) => {
     return ( < div className = "d-flex" >
         <
-        Digit color = "palegreen" / >
+        Digit color = "palegreen"
+        value = "10" / >
         <
-        Digit color = "skyblue" / >
+        Digit color = "skyblue"
+        value = "05" / >
         <
-        Digit color = "salmon" / >
+        Digit color = "salmon"
+        value = "03" / >
         <
         /div>
     )
